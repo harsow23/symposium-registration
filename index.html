@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Symposium Registration</title>
+</head>
+<body>
+    
+    <h1>Symposium</h1>
+<div class="container">
+    <form id="registrationForm">
+        
+        <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name" required >
+        </div>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" >
+        </div>
+        <div class="input-group">
+            <label for="institution">Institution</label>
+            <input type="text" id="institution" name="institution" placeholder="Enter Institution">
+        </div>
+        <div class="input-group">
+            <label for="Department">Department</label>
+            <select id="Department" name="Department">
+                <option value=""></option>
+                <option value="IT">IT</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="Civil">Civil</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required>
+            </div>
+        <button type="submit">Register</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
